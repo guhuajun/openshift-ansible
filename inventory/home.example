@@ -16,10 +16,10 @@ openshift-02.localdomain
 openshift-03.localdomain
 
 [nfs]
-openshift-01.localdomain
+openshift-03.localdomain
 
 [lb]
-openshift-01.localdomain
+openshift-03.localdomain
 
 # Create an OSEv3 group that contains the masters and nodes groups
 [OSEv3:children]
