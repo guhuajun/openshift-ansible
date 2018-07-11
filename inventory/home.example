@@ -56,10 +56,10 @@ openshift_release="3.9"
 # default subdomain to use for exposed routes, you should have wildcard dns
 # for *.apps.test.example.com that points at your infra nodes which will run
 # your router
-openshift_master_default_subdomain=apps.test.example.com
+openshift_master_default_subdomain=apps.localdomain
 
 #Set cluster_hostname to point at your load balancer
-openshift_master_cluster_hostname=openshift-01.test.example.com
+openshift_master_cluster_hostname=openshift-01.localdomain
 
 
 
