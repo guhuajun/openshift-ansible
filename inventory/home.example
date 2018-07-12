@@ -5,21 +5,21 @@
 # should use an external load balancing solution that itself is highly available.
 
 [masters]
-openshift-01.localdomain ansible_host=192.168.0.61
+openshift-01.corp.contoso.com ansible_host=192.168.0.61
 
 [etcd]
-openshift-01.localdomain ansible_host=192.168.0.61
+openshift-01.corp.contoso.com ansible_host=192.168.0.61
 
 [nodes]
-openshift-01.localdomain ansible_host=192.168.0.61
-openshift-02.localdomain ansible_host=192.168.0.62
-openshift-03.localdomain ansible_host=192.168.0.63
+openshift-01.corp.contoso.com ansible_host=192.168.0.61
+openshift-02.corp.contoso.com ansible_host=192.168.0.62
+openshift-03.corp.contoso.com ansible_host=192.168.0.63
 
 [nfs]
-openshift-03.localdomain ansible_host=192.168.0.63
+openshift-03.corp.contoso.com ansible_host=192.168.0.63
 
 [lb]
-openshift-03.localdomain ansible_host=192.168.0.63
+openshift-03.corp.contoso.com ansible_host=192.168.0.63
 
 # Create an OSEv3 group that contains the masters and nodes groups
 [OSEv3:children]
@@ -56,10 +56,10 @@ openshift_release="3.9"
 # default subdomain to use for exposed routes, you should have wildcard dns
 # for *.apps.test.example.com that points at your infra nodes which will run
 # your router
-openshift_master_default_subdomain=apps.localdomain
+openshift_master_default_subdomain=apps.corp.contoso.com
 
 #Set cluster_hostname to point at your load balancer
-openshift_master_cluster_hostname=openshift-01.localdomain
+openshift_master_cluster_hostname=openshift-01.corp.contoso.com
 
 
 
