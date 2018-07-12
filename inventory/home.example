@@ -840,8 +840,8 @@ openshift_node_dnsmasq_additional_config_file=custom_dns.conf
 # Hosts in the openshift_no_proxy list will NOT use any globally
 # configured HTTP(S)_PROXYs. openshift_no_proxy accepts domains
 # (.example.com), hosts (example.com), and IP addresses.
-#openshift_http_proxy=http://USER:PASSWORD@IPADDR:PORT
-#openshift_https_proxy=https://USER:PASSWORD@IPADDR:PORT
+openshift_http_proxy=http://192.168.0.11:1080
+openshift_https_proxy=http://192.168.0.11:1080
 #openshift_no_proxy='.hosts.example.com,some-host.com'
 #
 # Most environments don't require a proxy between openshift masters, nodes, and
