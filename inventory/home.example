@@ -12,8 +12,8 @@ openshift-01.corp.contoso.com
 
 [nodes]
 openshift-01.corp.contoso.com
-openshift-02.corp.contoso.com
-openshift-03.corp.contoso.com
+openshift-02.corp.contoso.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}"
+openshift-03.corp.contoso.com openshift_node_labels="{'region': 'primary', 'zone': 'default'}"
 
 [nfs]
 openshift-03.corp.contoso.com
