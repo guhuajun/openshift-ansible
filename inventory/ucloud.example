@@ -840,8 +840,8 @@ container_runtime_extra_storage='[{"device":"/dev/vdb","path":"/var/lib/origin/o
 # Hosts in the openshift_no_proxy list will NOT use any globally
 # configured HTTP(S)_PROXYs. openshift_no_proxy accepts domains
 # (.example.com), hosts (example.com), and IP addresses.
-openshift_http_proxy=http://192.168.0.11:1080
-openshift_https_proxy=http://192.168.0.11:1080
+# openshift_http_proxy=http://192.168.0.11:1080
+# openshift_https_proxy=http://192.168.0.11:1080
 #openshift_no_proxy='.hosts.example.com,some-host.com'
 #
 # Most environments don't require a proxy between openshift masters, nodes, and
