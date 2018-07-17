@@ -143,7 +143,7 @@ debug_level=2
 # during prerequisites.yml. For each hash, "device", "path", "filesystem" are
 # required. To add devices only on certain classes of node, redefine
 # container_runtime_extra_storage as a group var.
-#container_runtime_extra_storage='[{"device":"/dev/vdc","path":"/var/lib/origin/openshift.local.volumes","filesystem":"xfs","options":"gquota"}]'
+container_runtime_extra_storage='[{"device":"/dev/vdb","path":"/var/lib/origin/openshift.local.volumes","filesystem":"xfs","options":"gquota"}]'
 
 # Enable etcd debug logging, defaults to false
 # etcd_debug=true
