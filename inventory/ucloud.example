@@ -842,7 +842,7 @@ container_runtime_extra_storage='[{"device":"/dev/vdb","path":"/var/lib/origin/o
 # (.example.com), hosts (example.com), and IP addresses.
 openshift_http_proxy=http://10.9.69.43:1080
 openshift_https_proxy=http://10.9.69.43:1080
-#openshift_no_proxy='.hosts.example.com,some-host.com'
+openshift_no_proxy='.corp.contoso.com'
 #
 # Most environments don't require a proxy between openshift masters, nodes, and
 # etcd hosts. So automatically add those hostnames to the openshift_no_proxy list.
