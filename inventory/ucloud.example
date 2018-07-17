@@ -59,7 +59,7 @@ openshift_release="3.9"
 openshift_master_default_subdomain=apps.corp.contoso.com
 
 #Set cluster_hostname to point at your load balancer
-openshift_master_cluster_hostname=openshift-01.corp.contoso.com
+openshift_master_cluster_hostname=openshift-02.corp.contoso.com
 
 
 
