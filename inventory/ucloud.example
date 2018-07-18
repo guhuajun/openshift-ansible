@@ -32,6 +32,9 @@ nfs
 [OSEv3:vars]
 ###############################################################################
 
+# https://github.com/openshift/openshift-ansible/issues/6464
+template_service_broker_selector={"type": "infra"}
+
 # SSH user, this user should allow ssh based auth without requiring a
 # password. If using ssh key based auth, then the key should be managed by an
 # ssh agent.
